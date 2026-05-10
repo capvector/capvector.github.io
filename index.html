@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models">
+  <meta name="keywords" content="CapVector, capability vectors, VLA, vision-language-action, robotics, model merging">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CapVector</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" type="image/png" href="./static/images/capvector-icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero capvector-hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <p class="eyebrow">Project Page</p>
+          <h1 class="title is-1 publication-title">CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models</h1>
+          <h2 class="title is-4 publication-status">Preprint</h2>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Wenxuan Song<sup>1,*</sup>,</span>
+            <span class="author-block">Han Zhao<sup>2,3,*,&#8224;</sup>,</span>
+            <span class="author-block">Fuhao Li<sup>1,4</sup>,</span>
+            <span class="author-block">Ziyang Zhou<sup>1</sup>,</span>
+            <span class="author-block">Xi Wang<sup>4</sup>,</span>
+            <span class="author-block">Jing Lyu<sup>5</sup>,</span>
+            <span class="author-block">Pengxiang Ding<sup>2,3</sup>,</span>
+            <span class="author-block">Yan Wang<sup>4</sup>,</span>
+            <span class="author-block">Donglin Wang<sup>3,&#8225;</sup>,</span>
+            <span class="author-block">Haoang Li<sup>1,&#8225;</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors affiliations">
+            <span class="author-block"><sup>1</sup>HKUST (GZ)</span>
+            <span class="author-block"><sup>2</sup>Zhejiang University</span>
+            <span class="author-block"><sup>3</sup>Westlake University</span>
+            <span class="author-block"><sup>4</sup>Tsinghua University</span>
+            <span class="author-block"><sup>5</sup>Beijing Academy of Artificial Intelligence</span>
+          </div>
+
+          <div class="is-size-6 publication-authors note-line">
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            <span class="author-block"><sup>&#8224;</sup>Project Lead</span>
+            <span class="author-block"><sup>&#8225;</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#resource-placeholders"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#resource-placeholders"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#resource-placeholders"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#resource-placeholders"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-cubes"></i>
+                  </span>
+                  <span>Models</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#resource-placeholders"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-video"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teaser-strip">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image teaser-frame">
+          <img src="./static/images/teaser.png" alt="CapVector teaser figure.">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Features</h2>
+
+        <div class="columns is-multiline is-centered feature-grid">
+          <div class="column is-half-tablet is-one-quarter-desktop">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+              <h3 class="title is-5">Capability Transfer</h3>
+              <p>Extract capability vectors from auxiliary-objective finetuning and merge them into the pretrained backbone as a stronger initialization.</p>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-quarter-desktop">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-gauge-high"></i></div>
+              <h3 class="title is-5">Efficiency</h3>
+              <p>Retain the performance and convergence benefits of advanced finetuning methods while relying on conventional supervised finetuning downstream.</p>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-quarter-desktop">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-shuffle"></i></div>
+              <h3 class="title is-5">Versatility</h3>
+              <p>Works across different VLA architectures and auxiliary-objective strategies, including spatial perception and multimodal reasoning settings.</p>
+            </div>
+          </div>
+          <div class="column is-half-tablet is-one-quarter-desktop">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-globe"></i></div>
+              <h3 class="title is-5">Generalization</h3>
+              <p>Capability vectors improve out-of-domain transfer and remain effective on real-world tasks, novel scenes, and new robot embodiments.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content has-text-justified section-copy">
+          <p>
+            <strong>CapVector</strong> decouples two effects of auxiliary-objective finetuning in parameter space: enhancing general capabilities and fitting task-specific action distributions. The difference between an auxiliary-objective model and a standard-SFT model on the same task becomes a transferable <em>capability vector</em>.
+          </p>
+          <p>
+            After merging the capability vector into the pretrained model, downstream adaptation only needs standard SFT plus a lightweight orthogonal regularization loss. This keeps the workflow simple while preserving strong task performance and better training efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified section-copy">
+          <p>
+            This paper proposes a novel approach to address the challenge that pretrained VLA models often fail to effectively improve performance and reduce adaptation costs during standard supervised finetuning (SFT). Some advanced finetuning methods with auxiliary training objectives can improve performance and reduce the number of convergence steps, but they typically incur significant computational overhead due to the additional losses from auxiliary objectives.
+          </p>
+          <p>
+            To simultaneously achieve the enhanced capabilities of auxiliary training with the simplicity of standard SFT, we decouple the two objectives of auxiliary-objective SFT within the parameter space, namely, enhancing general capabilities and fitting task-specific action distributions. The parameters' difference between two models trained with distinct strategies can then be interpreted as capability vectors and merged with pretrained parameters to form a capability-enhanced meta model.
+          </p>
+          <p>
+            Moreover, when standard SFT is augmented with a lightweight orthogonal regularization loss, the merged model attains performance comparable to auxiliary finetuned baselines with reduced computational overhead. Internal and external experiments demonstrate that CapVector is effective across diverse models and can generalize to novel environments and embodiments out of the box.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified section-copy">
+          <p>
+            CapVector consists of two stages. Before downstream training, it extracts a capability vector by subtracting a standard-SFT model from an auxiliary-objective SFT model trained on the same capability extraction task set. This vector is then merged into the pretrained VLA to produce a capability-enhanced meta model.
+          </p>
+          <p>
+            During downstream adaptation, CapVector applies standard SFT together with an orthogonal regularization loss. The regularizer encourages updates for the new task to stay orthogonal to the injected capability vector, which mitigates forgetting and preserves the transferred capability over long training runs.
+          </p>
+
+          <div class="method-highlight">
+            <div class="method-step">
+              <span class="step-index">01</span>
+              <p>Train one model with standard SFT and another with auxiliary-objective SFT on the same extraction data.</p>
+            </div>
+            <div class="method-step">
+              <span class="step-index">02</span>
+              <p>Compute the parameter difference to isolate the transferable capability vector.</p>
+            </div>
+            <div class="method-step">
+              <span class="step-index">03</span>
+              <p>Merge the vector into the pretrained backbone and finetune with orthogonal regularization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+
+        <h3 class="title is-4">In-distribution Performance</h3>
+        <div class="content has-text-justified section-copy">
+          <figure class="image figure-frame">
+            <img src="./static/images/mix_fig_libero_openvla.png" alt="LIBERO comparison and orthogonal loss ablation.">
+            <figcaption class="has-text-centered is-size-6">CapVector inherits both effectiveness and training efficiency from auxiliary-objective finetuning on LIBERO.</figcaption>
+          </figure>
+          <p>
+            On LIBERO, CapVector consistently matches or exceeds Spatial Forcing while outperforming standard OpenVLA-OFT finetuning, especially in low-step regimes. The paper's findings show that the merged initialization preserves the fast convergence behavior of auxiliary-objective training.
+          </p>
+          <p>
+            The orthogonal regularization term is critical. Without it, the injected capability gradually degrades during long training, while the regularized version remains stronger even after abundant optimization steps.
+          </p>
+        </div>
+
+        <h3 class="title is-4">OOD Transfer and Capability Quality</h3>
+        <div class="content has-text-justified section-copy">
+          <figure class="image figure-frame narrow-figure">
+            <img src="./static/images/libero_long_bar.png" alt="Influence of visual richness on capability vector quality.">
+            <figcaption class="has-text-centered is-size-6">More diverse task-irrelevant visual variation produces higher-quality capability vectors.</figcaption>
+          </figure>
+          <p>
+            CapVector also transfers across domains: capability vectors extracted from LIBERO improve performance on RoboTwin, demonstrating that the injected gain is task-agnostic rather than tied to a single benchmark. In the paper, OpenVLA-OFT improves from 6.7% to 31.8% average success rate on RoboTwin after merging capability vectors extracted from LIBERO-Spatial.
+          </p>
+          <p>
+            The analysis further shows that extraction data quality matters. Rich, task-irrelevant visual variation helps produce better vectors, while highly task-specific visual shortcuts can degrade transfer quality.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Versatility Across Models</h3>
+        <div class="content has-text-justified section-copy">
+          <p>
+            Beyond OpenVLA and Spatial Forcing, CapVector also works with StarVLA, LaRA-VLA, and &pi;<sub>0.5</sub>. The paper shows that capability vectors can capture both spatial perception gains and multimodal reasoning gains, and can be merged into autoregressive and flow-matching VLA backbones alike.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Real-World and Generalization Highlights</h2>
+        <div class="content has-text-justified section-copy">
+          <figure class="image figure-frame">
+            <img src="./static/images/fig_ur3_setup.png" alt="UR3 real-world setup.">
+            <figcaption class="has-text-centered is-size-6">Industrial real-world evaluation platform built on a UR3 robot.</figcaption>
+          </figure>
+
+          <figure class="image figure-frame">
+            <img src="./static/images/real_task_our_lab_v3.png" alt="Real-world results on UR3 tasks.">
+            <figcaption class="has-text-centered is-size-6">Capability vectors extracted in simulation transfer effectively to real-world industrial manipulation tasks.</figcaption>
+          </figure>
+
+          <p>
+            The paper validates sim-to-real transfer by extracting capability vectors solely from LIBERO-Spatial and applying them to real-world finetuning. CapVector substantially improves over the standard baselines across three industrial tasks and can even surpass the auxiliary-objective baseline on some of them.
+          </p>
+
+          <figure class="image figure-frame">
+            <img src="./static/images/real_task_other_lab_v1.png" alt="Cross-embodiment deployment results.">
+            <figcaption class="has-text-centered is-size-6">The same capability vectors also improve performance on external embodiments including ARX Lift 2 and AgileX Cobot.</figcaption>
+          </figure>
+
+          <p>
+            These results support the main claim behind CapVector: transferable capability gains can be distilled once and reused across tasks, scenes, and robot embodiments without carrying the runtime cost of auxiliary objectives into every downstream training run.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="notification resource-note" id="resource-placeholders">
+          <p><strong>Resource status.</strong> Public links for the paper PDF, arXiv entry, code, models, and demo video are not attached in this repository yet. The hero buttons are intentionally kept as placeholders so they can be replaced later without changing the page structure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{song2026capvector,
+  title   = {CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models},
+  author  = {Song, Wenxuan and Zhao, Han and Li, Fuhao and Zhou, Ziyang and Wang, Xi and Lyu, Jing and Ding, Pengxiang and Wang, Yan and Wang, Donglin and Li, Haoang},
+  journal = {Preprint},
+  year    = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Website source adapted from the existing static academic page pattern in this repository.</p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
