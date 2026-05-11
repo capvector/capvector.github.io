@@ -28,9 +28,9 @@ body {
 
 .capvector-hero {
   background:
-    radial-gradient(circle at 78% 18%, rgba(167, 202, 226, 0.18), transparent 20%),
-    radial-gradient(circle at 22% 82%, rgba(118, 156, 186, 0.16), transparent 28%),
-    linear-gradient(140deg, rgba(36, 66, 92, 0.98) 8%, rgba(62, 99, 129, 0.95) 48%, rgba(103, 141, 171, 0.9) 100%);
+    radial-gradient(circle at 78% 18%, rgba(179, 196, 208, 0.12), transparent 22%),
+    radial-gradient(circle at 22% 82%, rgba(120, 143, 160, 0.12), transparent 30%),
+    linear-gradient(145deg, rgba(56, 74, 88, 0.96) 10%, rgba(79, 101, 118, 0.94) 52%, rgba(118, 139, 154, 0.9) 100%);
   color: #f7fbff;
 }
 
@@ -63,6 +63,15 @@ body {
 
 .publication-authors {
   color: rgba(247, 251, 255, 0.94);
+}
+
+.author-link {
+  color: inherit;
+}
+
+.author-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .publication-authors .author-block {
