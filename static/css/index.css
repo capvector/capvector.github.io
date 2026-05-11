@@ -67,11 +67,12 @@ body {
 
 .author-link {
   color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
 }
 
 .author-link:hover {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 .publication-authors .author-block {
@@ -97,6 +98,20 @@ body {
 
 .link-block a:hover {
   background: rgba(247, 251, 255, 0.16) !important;
+}
+
+.hf-emoji-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("https://cdn.simpleicons.org/huggingface/white");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  font-size: 0;
+  line-height: 1;
+  transform: translateY(0.03em);
 }
 
 .teaser-strip {
