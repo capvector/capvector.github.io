@@ -101,17 +101,14 @@ body {
 }
 
 .hf-emoji-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-image: url("https://cdn.simpleicons.org/huggingface/white");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: transparent;
-  font-size: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15em;
+  height: 1.15em;
+  font-size: 1rem;
   line-height: 1;
-  transform: translateY(0.03em);
+  transform: translateY(0.02em);
 }
 
 .teaser-strip {
